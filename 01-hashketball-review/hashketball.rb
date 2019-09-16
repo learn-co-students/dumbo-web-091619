@@ -119,5 +119,56 @@ def game_hash
   }
 end
 
-binding.pry
+def all_players
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  answer = home_players + away_players
+  return answer
+end
+
+def better_all_players
+  # RETURNS AN ARRAY
+  # {home => {}, away => {}}
+  players_list = game_hash.map do |location, team_data_hash|
+    team_data_hash[:players]
+  end
+  # players_list = [[{}], [{}]]
+  players_list.flatten
+  # flattened players_list = [{}, {}]
+end
+
+def player_stats(name)
+  # find the player in my collection of all the players with that name
+  better_all_players.find do |player_hash|
+    player_hash[:player_name] == name
+  end
+
+end
+
+def num_points_scored(name)
+  player_stats(name)[:points]
+end
+
+def shoe_size(name)
+  player_stats(name)[:shoe]
+end
+
+class_name = "091619"
+
+# binding.pry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #
