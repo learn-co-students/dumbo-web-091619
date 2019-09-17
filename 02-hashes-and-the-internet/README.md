@@ -5,6 +5,7 @@
 * GET requests
 * Server /client responses & relationship overview
 * APIs
+  - Application Programming Interface - Defines the exchanges between platforms/ how you access data/ plug-in (data in => data out)
 * JSON (string formatted as a hash/object)
 
 ### Deliverables
