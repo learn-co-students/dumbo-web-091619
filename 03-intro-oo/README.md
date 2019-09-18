@@ -2,6 +2,9 @@
 
 ## Objectives
 
+- Class: is a blueprint
+  - Instance: is the building built from that blueprint
+
 * Define `object` in programming domain
 * Explain the concept of sending messages
 * Create a class and instantiate an instance of the class
