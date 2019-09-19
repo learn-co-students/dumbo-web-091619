@@ -6,9 +6,9 @@
   * Is it the same as a one-to-many relationship?
   * What are some tools I can use for drawing one?
   * How can I figure out what kind of relationship I need?
-    * Continent - Countries
-    * Owners - Plants
-    * Windows — Buildings
+    * Continent -< Countries
+    * Owners -< Plants
+    * Windows >— Buildings
   * How do I do this in Ruby?
   * What is a single source of truth, and why do I need one?
   * What is a private method and why are they handy?
@@ -18,8 +18,8 @@
 
 # Deliverables
 * Create a User class. The class should have these methods:
-  * `#initialize` which takes a username and have
-  * a reader method for the username
+  * `#initialize` which takes a username, bio and have
+  * a reader method for the username, bio
   * `#tweets` that returns an array of Tweet instances
   * `#post_tweet` that takes a message, creates a new tweet, and adds it to the user's tweet collection
 * Create a Tweet class. The class should have these methods:
