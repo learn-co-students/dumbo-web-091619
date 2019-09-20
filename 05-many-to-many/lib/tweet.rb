@@ -6,7 +6,7 @@
 
 class Tweet
   attr_reader :author, :timestamp, :content
-  
+
   # class variable
   @@all = []
 
@@ -25,6 +25,18 @@ class Tweet
   # class method
   def self.all
     @@all
+  end
+
+  def likes
+    Like.all.select do |like|
+      like.tweet() == self
+    end
+  end
+
+  def likers
+    self.likes.map do |like|
+      like.user
+    end
   end
 
 
