@@ -29,6 +29,28 @@ Allows us to keep our code DRY (as it relates to classes). If we have similar me
 Converting data from a database file into objects that we can interact with and manipulate in code. Changes made to our object representation of the data should reflect in the database file. For ruby (on rails), we will be using `ActiveRecord` as our ORM.
 
 ### ActiveRecord
+
+  0) Establish a connection (environment.rb)
+
+  1) Create a migration, which is a set of instructions
+    (`rake db:create_migration NAME=create_villains`)
+  2) Write in our migration (TABLES SHOULD BE PLURAL)
+    (`create_table :villains do |t|
+        t.string :name
+        t.string :power
+        t.integer :age
+      end
+      `)
+  3) Run our migrations
+    (`rake db:migrate`)
+  3.5) Rinse and repeat steps 1-3
+  4) Create the class (CLASS SHOULD BE SINGULAR)
+    (`class Hero < ActiveRecord::Base
+
+    end
+    `)
+
+
 #### Rake - Task Runner:
 Rake lets us save some set instructions we want the computer to run into a command that we can call in the terminal using `rake` ie: `rake db:create_migration NAME="create_pokemons"`
 If we want to check what tasks we have available to us, we can do `rake -T`
