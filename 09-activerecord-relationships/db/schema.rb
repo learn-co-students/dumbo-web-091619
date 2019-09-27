@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_26_162128) do
+ActiveRecord::Schema.define(version: 2019_09_27_135647) do
+
+  create_table "fights", force: :cascade do |t|
+    t.integer "hero_id"
+    t.integer "villain_id"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "heros", force: :cascade do |t|
     t.string "name"

@@ -1,4 +1,39 @@
 class Hero < ActiveRecord::Base
+  has_many :fights
+  has_many :villains, through: :fights
+
+  # def fights
+  #   # Fight.where(hero_id: self.id)
+  #
+  #   Fight.all.select do |fight|
+  #     fight.hero_id == self.id
+  #   end
+  # end
+  #
+  # def villains
+  #   self.fights.map do |fight|
+  #     Villain.find(fight.villain_id)
+  #   end
+  # end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   # CREATE
   # spiderman = Hero.new(name: "Spiderman", age: 20, alias: "Peter Parker")
   # spiderman.save
