@@ -28,3 +28,21 @@ Appointment.create(doctor: dr_seuss, patient: thing_2, date: "Today")
 Appointment.create(doctor: dr_seuss, patient: cat_in_the_hat, date: "Tomorrow")
 Prescription.create(doctor: dr_seuss, patient: peter_parker, medicine: "Tylenol")
 Prescription.create(doctor: dr_seuss, patient: mary_jane, medicine: "Advil")
+
+Sibling.create(old_id: thing_1.id, young_id: thing_2.id)
+# Sibling.create(older_sib: thing1, younger_sib: thing2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
