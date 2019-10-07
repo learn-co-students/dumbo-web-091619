@@ -1,12 +1,12 @@
 Intro to Sinatra & MVC
 ===
 
-## SWBATs
+## Students Will Be Able To s
 
-* Explain the Model View Controller (MVC) pattern and give an example
+* Explain the MVC pattern and give an example
 * Explain how web frameworks (like Sinatra) use the MVC pattern and why
 * Define 'convention over configuration'
-* Implement one model that inherit from ActiveRecord
+* Implement one model that inherits from ActiveRecord
 * Implement one controller to route and process requests
   * Demonstrate how the params hash changes and where the data comes from
 * Implement ERB template and get it to render data from controller and model
@@ -33,7 +33,13 @@ Intro to Sinatra & MVC
 ### New!
 
 - *MVC*:
+  - Model: database, mod 1, objects (models), behavior and data
+  - View: presentational layer, what the user sees
+  - Contoller: interface between the model and the view
 - *RESTful Routing (REST)*:
+  - REpresentational State Transfer -> state, an object? something that can change => the data that user requesting, represented using HTML
+  - navigation, HTTP Verb + URL = route
+
 - *convention over configuration*: 
 
 ## Deliverables
@@ -41,16 +47,37 @@ Intro to Sinatra & MVC
 For each deliverable what is the route? What CRUD action does it correspond to?
 
 - view information on an individual movie
+  SHOW route
+  GET "/movies/:id"
 
 - view all movies
+  INDEX route
+  GET "/movies"
 
 - create a new movie
+  NEW route
+  GET "/movies/new"
+
+  CREATE route
+  POST "/movies"
 
 - edit an existing movie
+  route for showing a form
+  EDIT route
+  GET "/movies/:id/edit"
+  UPDATE route
+  PATCH/PUT "/movies/:id"
 
 - delete an existing movie
+  DELETE "/movies/:id"
+
+  7 restful routes
 
 ## Lecture Notes
+
+### MVC/REST Slides
+- https://docs.google.com/presentation/d/1_elK-0OTxI-zFGUSme5JeN-c4Il30Q023RaVxvexwfg/edit#slide=id.g378a2b8862_0_22
+
 
 ### MVC Architecture
 
