@@ -27,17 +27,17 @@ Sinatra (CR)UD Part 1
   - View helpers!
 
 ## REST & CRUD
-- Create
-  -[ ] GET '/movies/new' -> Show the user a form to create a new movie
-  -[ ] POST '/movies' -> Create a new movie in our database
-- Read
-  -[x] GET '/movies' -> Show all movies
-  -[x] GET '/movies/:id' -> Show one movie
-- Update
-  -[ ] GET '/movies/:id/edit' -> Show the user a form to edit an existing movie movie
-  -[ ] PATCH '/movies/:id' -> Update the movie in our database
-- Delete
-  -[ ] DELETE '/movies/:id' -> Delete the movie from our database
+- [ ] Create
+  - [ ] GET '/movies/new' -> Show the user a form to create a new movie
+  - [ ] POST '/movies' -> Create a new movie in our database
+- [ ] Read
+  - [x] GET '/movies' -> Show all movies
+  - [x] GET '/movies/:id' -> Show one movie
+- [ ] Update
+  - [ ] GET '/movies/:id/edit' -> Show the user a form to edit an existing movie movie
+  - [ ] PATCH '/movies/:id' -> Update the movie in our database
+- [ ] Delete
+  - [ ] DELETE '/movies/:id' -> Delete the movie from our database
 
 ### Static vs Dynamic Routes
 
