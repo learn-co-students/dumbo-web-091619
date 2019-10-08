@@ -47,9 +47,6 @@ class ApplicationController < Sinatra::Base
     redirect to "/movies/#{@movie.id}"
   end
 
-
-  # TODO: create a movie
-
 end
 
 # if "/movies"
