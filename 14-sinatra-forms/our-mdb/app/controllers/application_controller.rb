@@ -7,24 +7,48 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  # TODO: create a route to render a homepage
   get '/' do
     erb :home
   end
 
-  # TODO: show all the movies
   get '/movies' do
     @movies = Movie.all
     erb :index
   end
 
-  # TODO: show one single movie
+  # get '/movies/1' do
+  #   @movie = Movie.find(1)
+  #   erb :show
+  # end
+
+  # get '/movies/2' do
+  #   @movie = Movie.find(2)
+  #   erb :show
+  # end
+
+  get '/movies/new' do
+    erb :new
+  end
+
   get '/movies/:id' do
     # model
     @movie = Movie.find(params[:id])
+    @thumb_rating = "👍" * @movie.how_much_ian_likes_it
     # erb 
     erb :show
   end
+
+  post "/movies" do
+    @movie = Movie.create(params)
+    # @movie = Movie.create(title: params[:title], runtime: params[:runtime], how_much_ian_likes_it: params[:rating])
+    # @thumb_rating = "👍" * @movie.how_much_ian_likes_it
+
+    # erb :show
+    redirect to "/movies/#{@movie.id}"
+  end
+
+
+  # TODO: create a movie
 
 end
 
