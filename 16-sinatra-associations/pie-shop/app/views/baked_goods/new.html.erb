@@ -1,0 +1,14 @@
+<h1>Our New 🥧</h1>
+<form method="post" action="/baked_goods">
+  <label for="name">Name</label>
+  <input type="text" name="name">
+  <label for="price">price</label>
+  <input type="number" name="price">
+  <label for="baker_id">baker_id</label>
+  <select name="baker_id">
+    <% @bakers.each do |baker| %>
+      <option value="<%= baker.id %>"><%= baker.nickname %></option>
+    <% end %>
+  </select>
+  <input type="submit">
+</form>

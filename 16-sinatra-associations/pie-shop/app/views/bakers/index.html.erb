@@ -1,0 +1,10 @@
+<h1>This is the Model's index page.</h1>
+<%= link_to "Create a new Baked Good", "/baked_goods/new" %>
+<%= link_to "Create a Baker", "/bakers/new" %>
+<ul>
+<% @bakers.each do |baker| %>
+  <li>
+    <%= link_to baker.nickname, "/bakers/#{baker.id}" %>
+  </li>
+<% end %>
+</ul>

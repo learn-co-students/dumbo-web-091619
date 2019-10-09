@@ -1,0 +1,7 @@
+<h1>This is the show page for an individual instance of your model.</h1>
+<h2><%= @baker.nickname %></h2>
+Level: <%= @baker.exp_level %>
+
+<% @baker.baked_goods.each do |baked_good| %>
+  <p>This baker makes a mean <%= baked_good.name %>.</p>
+<% end %>
