@@ -1,0 +1,14 @@
+<h1>This is the Edit form for <%= @movie.title %></h1>
+<form method="POST" action="/movies/<%= @movie.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <label for="title">Title</label>
+  <input type="text" value="<%= @movie.title %>" name="movie[title]">
+  <br>
+  <label for="runtime">Runtime</label>
+  <input type="number" value="<%= @movie.runtime %>" name="movie[runtime]">
+  <br>
+  <label for="how_much_ian_likes_it">How Much Ian Likes It</label>
+  <input type="number" value="<%= @movie.how_much_ian_likes_it %>" name="movie[how_much_ian_likes_it]">
+  <br>
+  <input type="submit">
+</form>

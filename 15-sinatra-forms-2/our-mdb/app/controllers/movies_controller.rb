@@ -1,26 +1,15 @@
-require './config/environment'
+class MoviesController < ApplicationController
 
-class ApplicationController < Sinatra::Base
-
-  configure do
-    set :public_folder, 'public'
-    set :views, 'app/views'
-  end
-
-  get '/' do
-    erb :home
-  end
-
-  get '/movies' do
+  get "/movies" do
     # model
     @movies = Movie.all
     # render/redirect
-    erb :index
+    erb :"movies/index"
   end
 
   get '/movies/new' do
     # render
-    erb :new
+    erb :"movies/new"
   end
 
   get '/movies/:id' do
@@ -28,7 +17,7 @@ class ApplicationController < Sinatra::Base
     @movie = Movie.find(params[:id])
     @thumb_rating = "👍" * @movie.how_much_ian_likes_it
     # erb 
-    erb :show
+    erb :"movies/show"
   end
 
   post "/movies" do
@@ -41,7 +30,7 @@ class ApplicationController < Sinatra::Base
 
   get '/movies/:id/edit' do
     @movie = Movie.find(params[:id])
-    erb :edit
+    erb :"movies/edit"
   end
 
   put '/movies/:id' do

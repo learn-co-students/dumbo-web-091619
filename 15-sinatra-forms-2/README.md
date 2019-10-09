@@ -1,4 +1,4 @@
-Sinatra (CR)UD Part 2
+Sinatra CR(UD) Part 2
 ===
 
 ## SWBATs
@@ -20,8 +20,6 @@ Sinatra (CR)UD Part 2
 - *If there's time*
   - View helpers!
   - Search form!
-  - Helper methods!
-  - Partial views!
 
 ### REST & CRUD
 - [x] Create
