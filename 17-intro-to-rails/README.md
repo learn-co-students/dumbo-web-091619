@@ -19,7 +19,7 @@
   * Implicit render
   * Refactor routes to use `resources`
 * Demonstrate `link_to` helper and path helpers
-  * `rails routes`
+  * `rails routes` and `/rails/info/routes`
 
 ## Intro: What is Rails
 
