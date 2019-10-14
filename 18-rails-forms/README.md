@@ -12,12 +12,12 @@ Rails Forms
 Build full CRUD for one model
 - Create our model
 - Work on CRUD, focus on routes and ActionView helpers
-  - [ ] Create
+  - [x] Create
     - HTML form vs `form_tag` vs `form_for`
     - Strong Params
-  - [ ] Read
-    - `link_to` and path helpers
-  - [ ] Update
+  - [x] Read
+    - Review `link_to` and path helpers
+  - [x] Update
     - reusable `form_for`
   - [ ] Delete
     - `button_to`
@@ -74,7 +74,7 @@ Action View is one of the core libraries in Rails. It comes with a lot of helper
 #     </form>"
 ```
 
-- `form_for`: helps generate HTML forms. For an edit form, use an existing instance of a model; for a create form, use a new instance of a model (`@student = Student.new`). Based on what is passed as the first argument to `form_for`, it will generate the correct method and action in the `<form>` tag.
+- `form_for`: helps generate HTML forms, useful for working with models. For an edit form, use an existing instance of a model; for a create form, use a new instance of a model (`@student = Student.new`). Based on what is passed as the first argument to `form_for`, it will generate the correct method and action in the `<form>` tag.
 
 ```erb
 <%= form_for @student do |form_builder| %>
@@ -89,7 +89,20 @@ Action View is one of the core libraries in Rails. It comes with a lot of helper
 #  <input type="number" name="student[age]" id="student_age">
 #  <input type="submit" name="commit" value="Create Student">
 # </form>"
+```
 
+- `form_tag`: helps generate HTML forms; useful when you're not working with a model instance (for example, a search form). More generic than the `form_for` helper.
+
+```erb
+<%= form_tag "/students/search", method: :get do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+# => "<form method="get" action="/movies">
+#   <input type="text" name="search" id="search">
+#   <input type="submit" name="commit" value="Search">
+# </form>"
 ```
 
 Link To/Button To: [ActionView::Helpers::UrlHelper](https://api.rubyonrails.org/v5.2.3/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
