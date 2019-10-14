@@ -4,6 +4,8 @@ class RestaurantsController < ApplicationController
   def index
     # model
     @restaurants = Restaurant.all
+
+    # render/redirect
     # render :index
   end
 
@@ -11,38 +13,51 @@ class RestaurantsController < ApplicationController
   def show
     # model
     @restaurant = Restaurant.find(params[:id])
+
+    # render/redirect
     # render :show
   end
 
   # get /restaurants/new
   def new
+    # model
     @restaurant = Restaurant.new
+
+    # render/redirect
+    # render :new
   end
 
   # post /restaurants
   def create
+    # model
     restaurant = Restaurant.create(restaurant_params)
+
+    # render/redirect
     redirect_to restaurant
   end
 
   # get /restaurants/:id/edit
   def edit
+    # model
     @restaurant = Restaurant.find(params[:id])
+
     # render :edit
   end
 
   # patch /restaurants/:id
   def update
+    # model
     @restaurant = Restaurant.find(params[:id])
     @restaurant.update(restaurant_params)
-    # response/redirect
+
+    # render/redirect
     redirect_to @restaurant
   end
 
   private
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :address)
+    params.require(:restaurant).permit(:name, :address, :rating)
   end
 
 end
