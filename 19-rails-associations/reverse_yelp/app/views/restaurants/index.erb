@@ -1,0 +1,10 @@
+<h1>All the Restos</h1>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <% byebug %>
+      <%= link_to restaurant.name, restaurant %>
+      <%# restaurant.name %>
+    </li>
+  <% end %>
+</ul>

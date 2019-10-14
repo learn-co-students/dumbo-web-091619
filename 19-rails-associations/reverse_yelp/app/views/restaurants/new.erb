@@ -1,0 +1,24 @@
+where we make a new resto
+
+<h2>HTML Form</h2>
+<form method="POST" action="/restaurants">
+  <input type="text" name="name">
+  <input type="text" name="address">
+  <input type="number" name="rating">
+  <input type="submit" value="Create a resto">
+</form>
+
+<h2>form_tag</h2>
+<%= form_tag "/restaurants" do %>
+  <%= text_field_tag :name %>
+  <%= text_field_tag :address %>
+  <%= number_field_tag :rating %>
+  <%= submit_tag "Create a resto" %>
+<% end %>
+
+<h2>form_for</h2>
+<%= form_for @restaurant do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :address %>
+  <%= f.submit %>
+<% end %>
