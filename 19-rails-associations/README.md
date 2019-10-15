@@ -11,11 +11,18 @@ Rails Associations
 - *BONUS*: Customize the app's layout using the application.html.erb file 
 
 ## Outline
-- Finish CRUD (delete)
-- Add an additional model to our domain
-  - Create relationship using ActiveRecord
-  - Use information from the association in our views
-  - Make a create form for the new model with a dropdown
+- Process & What to review
+  - `link_to`
+  - `form_for` 
+  - render a partial
+  - mass assignment and strong params (require / permit)
+
+- [x] Finish CRUD (delete)
+- [x] Add an additional model to our domain
+  - [x] Create relationship using ActiveRecord
+  - [x] Use information from the association in our views
+  - [x] Make a create form for the new model with a dropdown
+  - [x] Update our delete method from the first model
 - If there's time...
   - refactor controller using `before_action`
   - use partial views
