@@ -17,7 +17,7 @@ class CustomersController < ApplicationController
   private
 
   def customer_params
-    params.require(:customer).permit(:name, :rating, :review, :restaurant_id)
+    params.require(:customer).permit(:name)
   end
 
 end
