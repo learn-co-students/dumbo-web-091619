@@ -1,0 +1,12 @@
+<h1><%= @restaurant.name %></h1>
+<em>Rating: <%= "⭐️" * @restaurant.rating %></em>
+<p>
+  <%= @restaurant.address %>
+</p>
+
+<%= button_to("plz delete", @restaurant, method: :delete) %>
+
+<h2>All the customers</h2>
+<% @restaurant.customers.each do |customer| %>
+  <p><%= link_to customer.name, customer %></p>
+<% end %>

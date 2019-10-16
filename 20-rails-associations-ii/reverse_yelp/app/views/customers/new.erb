@@ -1,0 +1,20 @@
+hi this is the new custo page
+<%= form_for @customer do |f| %>
+  <%= f.label :name, "Who is it?" %>
+  <%= f.text_field :name %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.label :review %>
+  <%= f.text_field :review %>
+  <%= f.label :restaurant_id %>
+  <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name, prompt: true %>
+  <%= f.submit %>
+<% end %>
+
+<select name="customer[restaurant_id]">
+  <% Restaurant.all.each do |r| %>
+    <option value="<%= r.id %>">
+      <%= r.name %>
+    </option>
+  <% end %>
+</select>
