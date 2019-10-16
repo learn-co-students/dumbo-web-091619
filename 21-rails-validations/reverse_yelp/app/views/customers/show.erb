@@ -1,0 +1,9 @@
+<h1><%= @customer.name %>'s Page</h1>
+<% @customer.customer_reviews.each do |customer_review| %>
+  Restaurant: <%= customer_review.restaurant_name %>
+  <br>
+  Rating: <%= customer_review.rating %>
+  <p> 
+    <%= customer_review.review %>
+  </p>
+<% end %>

@@ -1,0 +1,12 @@
+<h1>Rate That Customerrrrrrrrr</h1>
+<%= form_for @customer_review do |f| %>
+  <%= f.label :review %>
+  <%= f.text_area :review %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.label :customer_id %>
+  <%= f.collection_select :customer_id, @customers, :id, :name %>
+  <%= f.label :restaurant_id %>
+  <%= f.collection_select :restaurant_id, @restaurants, :id, :name, prompt: true %>
+  <%= f.submit %>
+<% end %>
