@@ -2,6 +2,7 @@ Rails Validations
 ===
 
 ## SWBATs
+- Understand the difference between client-side and server-side validations
 - Create server side validations using ActiveRecord
 - Validate different data types (string, number)
 - Create custom validations
