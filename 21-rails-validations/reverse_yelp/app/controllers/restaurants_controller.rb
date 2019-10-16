@@ -33,6 +33,8 @@ class RestaurantsController < ApplicationController
     restaurant = Restaurant.create(restaurant_params)
 
     # render/redirect
+    # redirect_to "/restaurants/#{restaurant.id}"
+    # redirect_to restaurant_path(restaurant)
     redirect_to restaurant
   end
 

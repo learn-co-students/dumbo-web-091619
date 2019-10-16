@@ -6,8 +6,12 @@ class CustomersController < ApplicationController
 
   def create
     customer = Customer.create(customer_params)
-    # redirect to the restaurant show page
-    redirect_to restaurant_path(customer.restaurant)
+    if customer.valid?
+      redirect_to customer
+    else
+      flash[:errors] = customer.errors.full_messages
+      redirect_to new_customer_path
+    end
   end
 
   def show

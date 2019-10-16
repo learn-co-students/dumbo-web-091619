@@ -8,6 +8,15 @@ Rails Validations
 - Create custom validations
 - Use the flash hash to persist data for an additional request and render error messages to the user
 
+Client side
+- give some feedback to the user
+- text field/number field/collection select
+
+Server side
+- correct data being persisted
+- 
+
+
 **Problem Statement:** We need to make sure users input data in a way that ensures only *valid* data is saved in our database. 
 
 In other words, how do we protect our database from the typical user:

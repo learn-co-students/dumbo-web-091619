@@ -1,3 +1,7 @@
+<% if flash[:good_job] %>
+  <p style="color: green;"><%= flash[:good_job] %></p>
+<% end %>
+
 <h1><%= @restaurant.name %></h1>
 <em>Rating: <%= "⭐️" * @restaurant.rating %></em>
 <p>

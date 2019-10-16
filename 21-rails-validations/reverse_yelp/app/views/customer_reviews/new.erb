@@ -1,4 +1,13 @@
 <h1>Rate That Customerrrrrrrrr</h1>
+
+<% if flash[:errors] %>
+  <ol>
+    <% flash[:errors].each do |err| %>
+      <li><%= err %></li>
+    <% end %>
+  </ol>
+<% end %>
+
 <%= form_for @customer_review do |f| %>
   <%= f.label :review %>
   <%= f.text_area :review %>
