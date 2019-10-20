@@ -1,0 +1,22 @@
+<%= render "shared/heading", title: "Restaurants" %>
+
+<%= button_to "Create Restaurant", new_restaurant_path, method: :get, class: "button" %>
+
+<ul class="yelp-list">
+  <% @restaurants.each do |restaurant| %>
+    <li class="yelp-list__item">
+      <div class="yelp-list__image">
+        <%= image_tag restaurant.image_url %>
+      </div>
+      <div class="yelp-list__info">
+        <%= link_to restaurant.name, restaurant, class: "yelp-list__name" %>
+        <div class="yelp-list__address">
+          <%= simple_format restaurant.address %>
+        </div>
+        <div class="yelp-list__rating">
+          <%= "⭐️" * restaurant.rating.to_i %>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

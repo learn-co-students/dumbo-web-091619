@@ -1,0 +1,19 @@
+<%= render "shared/heading", title: "Make a new customer" %>
+
+<%= form_for @customer, html: { class: "form" } do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :avatar %>
+  <%= f.text_field :avatar %>
+
+  <% if flash[:errors] %>
+    <ol>
+      <% flash[:errors].each do |err| %>
+        <li class="error"><%= err %></li>
+      <% end %>
+    </ol>
+  <% end %>
+
+  <%= f.submit class: "button" %>
+<% end %>
