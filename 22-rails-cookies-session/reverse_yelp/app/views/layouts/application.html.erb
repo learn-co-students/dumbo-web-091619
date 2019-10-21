@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -16,6 +16,11 @@
         <nav>
           <%= link_to "Customers", customers_path, class: "item" %>
           <%= link_to "Restaurants", restaurants_path, class: "item" %>
+        </nav>
+        <nav class="right">
+          <span class="item">
+            Welcome, User!
+          </span>
         </nav>
       </div>
     </header>
