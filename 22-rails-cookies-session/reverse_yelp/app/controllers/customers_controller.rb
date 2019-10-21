@@ -19,6 +19,11 @@ class CustomersController < ApplicationController
   end
 
   def show
+    # if session["page_views_remaining"] == nil
+    #   session["page_views_remaining"] = 5
+    # end
+    decrease_page_views
+    @page_views_remaining = session["page_views_remaining"]
     @customer = Customer.find(params[:id])
   end
 

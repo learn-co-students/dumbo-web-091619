@@ -1,5 +1,7 @@
 <%= render "shared/heading", title: @restaurant.name %>
 
+<h1><%= session["page_views_remaining"] %></h1>
+
 <div class="yelp-info">
   <div class="yelp-info__image">
     <%= image_tag @restaurant.image_url %>

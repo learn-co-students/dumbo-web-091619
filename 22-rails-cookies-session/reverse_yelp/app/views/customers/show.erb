@@ -1,27 +1,34 @@
 <%= render "shared/heading", title: "#{@customer.name}'s Page" %>
 
-<div class="yelp-info">
-  <div class="yelp-info__image">
-    <%= image_tag @customer.avatar %>
-  </div>
-  <div class="yelp-info__main">
-    <h3>
-      Average Rating: <%= @customer.average_rating %>
-    </h3>
+<h1>Page Views Remaining: <%= @page_views_remaining %></h1>
 
-    <ul class="yelp-info__list">
-      <h3>Reviews</h3>
-      <%= button_to "Add Review", new_customer_review_path, method: :get, class: "button" %>
-      <% @customer.customer_reviews.each do |customer_review| %>
-        <li>
-          <%= link_to customer_review.restaurant_name, customer_review.restaurant %>
-          <br>
-          Rating: <%= "⭐️" * customer_review.rating %>
-          <p> 
-            <%= customer_review.review %>
-          </p>
-        </li>
-      <% end %>
-    </ul>
+<% if @page_views_remaining > 0 %>
+  <div class="yelp-info">
+    <div class="yelp-info__image">
+      <%= image_tag @customer.avatar %>
+    </div>
+    <div class="yelp-info__main">
+      <h3>
+        Average Rating: <%= @customer.average_rating %>
+      </h3>
+
+      <ul class="yelp-info__list">
+        <h3>Reviews</h3>
+        <%= button_to "Add Review", new_customer_review_path, method: :get, class: "button" %>
+        <% @customer.customer_reviews.each do |customer_review| %>
+          <li>
+            <%= link_to customer_review.restaurant_name, customer_review.restaurant %>
+            <br>
+            Rating: <%= "⭐️" * customer_review.rating %>
+            <p> 
+              <%= customer_review.review %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-</div>
+<% else %>
+  <iframe width="973" height="730" src="https://www.youtube.com/embed/f_SwD7RveNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <%= button_to "I Swear That I Watched the Whole Dang Ad.", "/sessions/reset" %>
+<% end %>

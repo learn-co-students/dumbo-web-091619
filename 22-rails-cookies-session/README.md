@@ -4,8 +4,15 @@ Sessions & Cookies
 ## SWBATs
 - Describe the stateless nature of HTTP
 - Explain how cookies give the server access to information about our site's users across requests
-- Use the `session` hash to persist information
+- Use the `session` hash to persist information and encrypt it
 - Use the ApplicationController to share logic across other controllers in the application
+
+What are cookies
+- delicious
+- stored in the browser (you can delete your own cookies)
+- used to track user information across different requests (analytics, user preferences, auth)
+- your footprint on the internet
+- GDPR / regulations about storing user data
 
 **Problem Statement**: We want to start monetizing the content on our site through advertisements, so we need to add a paywall. After viewing a page on our site 5 times, they'll have to watch an ad before viewing any more pages.
 
@@ -29,7 +36,7 @@ Cookies are typically use to store session information (user login/shopping cart
 In Rails, you can access the cookies hash from any controller/view:
 
 _app/controllers/students_controller.rb_
-```
+```rb
 def index
   if (params[:dark_mode] == 1) {
     cookies[:dark_mode] = 1

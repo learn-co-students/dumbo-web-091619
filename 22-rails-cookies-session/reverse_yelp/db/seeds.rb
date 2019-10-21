@@ -5,12 +5,12 @@ Customer.destroy_all
 
 puts "Fetching Yelp data..."
 ### OPTION 1: Seed from JSON file
-# json_file = File.read(File.join(Rails.root, 'db', 'restaurants.json'))
-# restaurant_hash = JSON.parse(json_file)
+json_file = File.read(File.join(Rails.root, 'db', 'restaurants.json'))
+restaurant_hash = JSON.parse(json_file)
 
 ### OPTION 2: Seed from API requests, see: app/adapters/yelp/adapter.rb
-yelp_client = Yelp::Adapter.new
-restaurant_hash = yelp_client.search("Restaurants", "Dumbo NYC")
+# yelp_client = Yelp::Adapter.new
+# restaurant_hash = yelp_client.search("Restaurants", "Dumbo NYC")
 
 # create restaurants
 puts "Seeding restaurants..."

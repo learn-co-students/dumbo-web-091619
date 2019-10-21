@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :customer_reviews, only: [:new, :create]
   resources :customers, only: [:show, :new, :create, :index]
   resources :restaurants
+
+  post "/sessions/reset", to: "sessions#reset"
 end
