@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_20_121915) do
+ActiveRecord::Schema.define(version: 2019_10_22_144053) do
 
   create_table "customer_reviews", force: :cascade do |t|
     t.string "review"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2019_10_20_121915) do
     t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image_url"
+    t.string "image_url", default: "https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg"
   end
 
   add_foreign_key "customer_reviews", "customers"
