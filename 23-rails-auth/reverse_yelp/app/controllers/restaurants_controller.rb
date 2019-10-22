@@ -22,8 +22,13 @@ class RestaurantsController < ApplicationController
   # post /restaurants
   def create
     restaurant = Restaurant.create(restaurant_params)
-    
-    redirect_to restaurant
+    if restaurant.valid?
+      session[:restaurant_id] = restaurant.id
+      redirect_to restaurant
+    else
+      flash[:errors] = restaurant.errors.full_messages
+      redirect_to new_restaurant_path
+    end
   end
 
   # get /restaurants/:id/edit
@@ -54,7 +59,7 @@ class RestaurantsController < ApplicationController
   end
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :address, :rating, :image_url)
+    params.require(:restaurant).permit(:name, :address, :rating, :image_url, :username, :password)
   end
 
 end

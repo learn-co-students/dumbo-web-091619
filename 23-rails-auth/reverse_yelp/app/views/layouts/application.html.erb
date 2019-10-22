@@ -19,7 +19,11 @@
         </nav>
         <nav class="right">
           <span class="item">
-            Welcome, User!
+            <% if @current_restaurant == nil %>
+              <%= link_to "Sign Up", new_restaurant_path %>
+            <% else %>
+              Welcome, <%= @current_restaurant.username %>!
+            <% end %>
           </span>
         </nav>
       </div>

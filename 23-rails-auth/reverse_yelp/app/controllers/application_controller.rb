@@ -1,7 +1,12 @@
 class ApplicationController < ActionController::Base
   before_action :set_page_view
+  before_action :set_current_restaurant
 
   private
+
+  def set_current_restaurant
+    @current_restaurant = Restaurant.find_by(id: session[:restaurant_id])
+  end
 
   def set_page_view
     if session["page_views_remaining"] == nil

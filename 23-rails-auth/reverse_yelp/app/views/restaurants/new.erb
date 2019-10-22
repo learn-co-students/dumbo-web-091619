@@ -1,6 +1,13 @@
-<%= render "shared/heading", title: "Create a new restaurant" %>
+<%= render "shared/heading", title: "Sign Up as a New Resto" %>
 
 <%= form_for @restaurant, html: { class: "form" } do |f| %>
+
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
   <%= f.label :name %>
   <%= f.text_field :name %>
 

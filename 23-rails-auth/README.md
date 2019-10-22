@@ -13,11 +13,29 @@ Rails Authentication & Authorization
 - Go over sessions, cookies, and implement sign up, log in, and log out
 
 ## Part I
-- What's the difference between Authentication vs Authorization?
-- What is hashing and how does it make password storage more secure?
-- What are rainbow tables and how can they defeat a password hashing strategy?
-- What is salting? What is a salt? How can it defeat a rainbow tables attack?
 
+### Discussion
+- What's the difference between Authentication vs Authorization?
+  - Authentication: allow for acces, Identification
+  - Authorization: what you do with that access, Permission
+
+- What is hashing and how does it make password storage more secure?
+  - hashing: taking the password, and run through encryption
+  "apple" -> "akjghfalkjsdhflkasdjhfpaisdufyp8qu32487iukfd"
+  "apple" -> "akjghfalkjsdhflkasdjhfpaisdufyp8qu32487iukfd"
+  "password123" -> "sadkjfhlakjdfhlkjasdhflaksjdhfhlkasdjfhlasdf"
+
+- What are rainbow tables and how can they defeat a password hashing strategy?
+  - a way to reverse engineer hashed passwords
+
+- What is salting? What is a salt? How can it defeat a rainbow tables attack?
+  "apple" + "seasalt" -> "seasaltkljashdfkajshdflkjashdfkl;asjdhflkajsfhsdf"
+  "apple" + "lksadjhflaksjdhflaksdfj" -> "table saltklajhdgfljaskdhflajksdfghlaskjdfgpiuewrtiolukj"
+  "apple" + "table salt" -> "table saltklajhdgfljaskdhflajksdfghlaskjdfgpiuewrtiolukj"
+
+### Implemention
+- Create a `username` and `password_digest` field for Authentication
+- BCrypt: `create` vs `new`, `==`
 
 ## Part II
 - Sign Up vs Login 
