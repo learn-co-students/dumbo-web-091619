@@ -20,9 +20,11 @@
         <nav class="right">
           <span class="item">
             <% if @current_restaurant == nil %>
-              <%= link_to "Sign Up", new_restaurant_path %>
+              <%= link_to "Sign Up", new_restaurant_path, class: "item" %>
+              <%= link_to "Login", login_path, class: "item" %>
             <% else %>
               Welcome, <%= @current_restaurant.username %>!
+              <%= link_to "Logout", "/logout", method: :delete, class: "item" %>
             <% end %>
           </span>
         </nav>

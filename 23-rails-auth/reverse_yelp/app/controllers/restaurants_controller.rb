@@ -1,5 +1,7 @@
 class RestaurantsController < ApplicationController
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_restaurant, only: [:edit, :update, :destroy]
+  skip_before_action :authorized, only: [:new, :create]
 
   # get /restaurants
   def index
@@ -34,12 +36,14 @@ class RestaurantsController < ApplicationController
   # get /restaurants/:id/edit
   # set_restaurant
   def edit
-    # render :edit
+    # authorize_restaurant
+    render :edit
   end
 
   # patch /restaurants/:id
   # set_restaurant
   def update
+    # authorize_restaurant
     @restaurant.update(restaurant_params)
 
     redirect_to @restaurant
@@ -47,12 +51,20 @@ class RestaurantsController < ApplicationController
 
   # delete /restaurants/:id
   def destroy
+    # authorize_restaurant
     @restaurant.destroy
 
     redirect_to restaurants_path
   end
 
   private
+
+  def authorize_restaurant
+    if @restaurant != @current_restaurant
+      redirect_to restaurants_path
+    end
+
+  end
 
   def set_restaurant
     @restaurant = Restaurant.find(params[:id])

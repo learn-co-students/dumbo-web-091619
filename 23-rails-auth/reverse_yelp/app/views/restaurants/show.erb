@@ -10,8 +10,10 @@
     </p>
     <%= "⭐️" * @restaurant.rating.to_i %>
     <div class="yelp-info__actions">
-      <%= link_to "Edit", edit_restaurant_path(@restaurant) %>
-      <%= link_to "Delete", @restaurant, method: :delete %>
+      <% if @current_restaurant == @restaurant %>
+        <%= link_to "Edit", edit_restaurant_path(@restaurant) %>
+        <%= link_to "Delete", @restaurant, method: :delete %>
+      <% end %>
     </div>
   </div>
 </div>

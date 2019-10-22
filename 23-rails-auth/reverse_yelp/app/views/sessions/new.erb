@@ -1,0 +1,20 @@
+<%= render "shared/heading", title: "Login" %>
+
+<%= form_for :session, url: "/login", html: { class: "form" } do |f| %>
+
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <% if flash[:errors] %>
+    <ul>
+      <% flash[:errors].each do |error| %>
+        <li class="error"><%= error %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.submit class: "button" %>
+<% end %>

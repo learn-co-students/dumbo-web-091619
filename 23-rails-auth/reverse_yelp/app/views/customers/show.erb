@@ -13,6 +13,7 @@
       <ul class="yelp-info__list">
         <h3>Reviews</h3>
         <%= button_to "Add Review", new_customer_review_path, method: :get, class: "button" %>
+        
         <% @customer.customer_reviews.each do |customer_review| %>
           <li>
             <%= link_to customer_review.restaurant_name, customer_review.restaurant %>
