@@ -19,7 +19,9 @@ restaurant_hash["businesses"].each do |restaurant|
     name: restaurant["name"], 
     address: restaurant["location"]["display_address"].join("\n"), 
     rating: restaurant["rating"].to_i,
-    image_url: restaurant["image_url"]
+    image_url: restaurant["image_url"],
+    username: restaurant["alias"],
+    password: "password123"
   )
 end
 
