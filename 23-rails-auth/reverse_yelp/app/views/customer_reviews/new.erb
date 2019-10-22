@@ -1,0 +1,25 @@
+<%= render "shared/heading", title: "Leave a Customer Review" %>
+
+<%= form_for @customer_review, html: { class: "form" } do |f| %>
+  <%= f.label :customer_id %>
+  <%= f.collection_select :customer_id, @customers, :id, :name, prompt: true %>
+
+  <%= f.label :restaurant_id %>
+  <%= f.collection_select :restaurant_id, @restaurants, :id, :name, prompt: true %>
+
+  <%= f.label :review %>
+  <%= f.text_area :review %>
+
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+
+  <% if flash[:errors] %>
+    <ol>
+      <% flash[:errors].each do |err| %>
+        <li class="error"><%= err %></li>
+      <% end %>
+    </ol>
+  <% end %>
+
+  <%= f.submit class: "button" %>
+<% end %>

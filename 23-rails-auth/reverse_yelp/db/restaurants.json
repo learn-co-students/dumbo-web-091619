@@ -1,0 +1,1308 @@
+{
+  "businesses": [
+      {
+          "id": "hmdm-dO72hLsMQwQRcGEUQ",
+          "alias": "atrium-dumbo-brooklyn",
+          "name": "Atrium Dumbo",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TAog5s7slOJ0778OGRzuWQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/atrium-dumbo-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 653,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "french",
+                  "title": "French"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.7033899,
+              "longitude": -73.9904923
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "15 Main St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "15 Main St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188581095",
+          "display_phone": "(718) 858-1095",
+          "distance": 103.13892836467681
+      },
+      {
+          "id": "56qlj1cYlqNzmG0xllGg-w",
+          "alias": "westville-dumbo-brooklyn",
+          "name": "Westville Dumbo",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/y9agcxhbRPYMNzsk4b9Peg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/westville-dumbo-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 258,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "comfortfood",
+                  "title": "Comfort Food"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.7017969340086,
+              "longitude": -73.9896315336227
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "81 Washington St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "81 Washington St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17186185699",
+          "display_phone": "(718) 618-5699",
+          "distance": 112.04539156556571
+      },
+      {
+          "id": "ysqgdbSrezXgVwER2kQWKA",
+          "alias": "julianas-pizza-brooklyn-5",
+          "name": "Juliana's Pizza",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/7JtwTxhWHf3YS70Ss_CfxA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/julianas-pizza-brooklyn-5?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 2088,
+          "categories": [
+              {
+                  "alias": "pizza",
+                  "title": "Pizza"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.7026153030093,
+              "longitude": -73.9934159993549
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "19 Old Fulton St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "19 Old Fulton St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17185966700",
+          "display_phone": "(718) 596-6700",
+          "distance": 251.70759335011746
+      },
+      {
+          "id": "nHMDOIX32dGbfpuNUwsLNQ",
+          "alias": "almar-brooklyn-2",
+          "name": "AlMar",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/TTzeaitXeXWX0MBzLun3xw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/almar-brooklyn-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 416,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "cocktailbars",
+                  "title": "Cocktail Bars"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.702662,
+              "longitude": -73.989177
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "111 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "111 Front St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188555288",
+          "display_phone": "(718) 855-5288",
+          "distance": 105.69613635359825
+      },
+      {
+          "id": "-Gc5sTFxoXM3Tiv_dkSJZg",
+          "alias": "cecconis-dumbo-brooklyn",
+          "name": "Cecconi's Dumbo",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IBLvIwCEjW-CiJUc6fo5Ng/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/cecconis-dumbo-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 610,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.7033063330116,
+              "longitude": -73.9916549604523
+          },
+          "transactions": [],
+          "price": "$$$",
+          "location": {
+              "address1": "55 Water St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "55 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17186503900",
+          "display_phone": "(718) 650-3900",
+          "distance": 125.29498136536012
+      },
+      {
+          "id": "dzlhiEg7nE49iReUC10w_A",
+          "alias": "jack-the-horse-tavern-brooklyn",
+          "name": "Jack the Horse Tavern",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/cGMc4G5EoTZFjMzrvX_lFw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/jack-the-horse-tavern-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 386,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.699973,
+              "longitude": -73.993781
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$$",
+          "location": {
+              "address1": "66 Hicks St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "66 Hicks St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188525084",
+          "display_phone": "(718) 852-5084",
+          "distance": 405.870133226395
+      },
+      {
+          "id": "4XX-zF8h5Lvrr22_tqU6-Q",
+          "alias": "the-river-café-brooklyn-3",
+          "name": "The River Café",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Rxg5eDnRtIm73UEuNa3NHA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-river-caf%C3%A9-brooklyn-3?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 1095,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "wine_bars",
+                  "title": "Wine Bars"
+              },
+              {
+                  "alias": "venues",
+                  "title": "Venues & Event Spaces"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.70318,
+              "longitude": -73.9946499
+          },
+          "transactions": [],
+          "price": "$$$$",
+          "location": {
+              "address1": "1 Water St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "1 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17185225200",
+          "display_phone": "(718) 522-5200",
+          "distance": 363.7722957777435
+      },
+      {
+          "id": "MGd6HFEq1ALD58XWNviSXw",
+          "alias": "time-out-market-new-york-brooklyn",
+          "name": "Time Out Market New York",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TmhwMz3q6IdmVVC8ZgZc8Q/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/time-out-market-new-york-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 155,
+          "categories": [
+              {
+                  "alias": "food_court",
+                  "title": "Food Court"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.7037211399782,
+              "longitude": -73.9918105285751
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "55 Water St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "55 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+19178104855",
+          "display_phone": "(917) 810-4855",
+          "distance": 165.10767294270406
+      },
+      {
+          "id": "CqtT8rPaSmrRClUBbqsCFA",
+          "alias": "seamores-brooklyn",
+          "name": "Seamore's",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/QBPv2XXH3Inp60QNMypPdg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/seamores-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 92,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.7032,
+              "longitude": -73.99145
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "66 Water St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "66 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17186636550",
+          "display_phone": "(718) 663-6550",
+          "distance": 89.80453257115236
+      },
+      {
+          "id": "4aF0F8w7yXX9o5_QFky_ig",
+          "alias": "celestine-brooklyn",
+          "name": "Celestine",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/J5HuHor_cmVEG6HhQtFeDw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/celestine-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 199,
+          "categories": [
+              {
+                  "alias": "mediterranean",
+                  "title": "Mediterranean"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.704676,
+              "longitude": -73.987975
+          },
+          "transactions": [],
+          "price": "$$$",
+          "location": {
+              "address1": "1 John St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "1 John St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17185225356",
+          "display_phone": "(718) 522-5356",
+          "distance": 304.5472058258508
+      },
+      {
+          "id": "3UdlrH-tuVM0vy3ySh7bUw",
+          "alias": "jacobs-pickles-time-out-market-brooklyn-2",
+          "name": "Jacob's Pickles Time Out Market",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/o1TIlTzD5ypUR8S0JMK5YA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/jacobs-pickles-time-out-market-brooklyn-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 15,
+          "categories": [
+              {
+                  "alias": "comfortfood",
+                  "title": "Comfort Food"
+              },
+              {
+                  "alias": "southern",
+                  "title": "Southern"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.7034,
+              "longitude": -73.991402
+          },
+          "transactions": [],
+          "location": {
+              "address1": "55 Water St",
+              "address2": null,
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "55 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 129.7058509044588
+      },
+      {
+          "id": "I4LSdJd2Z8M6VNLhbX3aLA",
+          "alias": "superfine-brooklyn",
+          "name": "Superfine",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DRJnzqoFIK3VtL8Gk1MKBQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/superfine-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 446,
+          "categories": [
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              },
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.702236,
+              "longitude": -73.987426
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "126 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "126 Front St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17182439005",
+          "display_phone": "(718) 243-9005",
+          "distance": 263.24391350291745
+      },
+      {
+          "id": "_N92SH1Zi-Hbxn_bNHFz0Q",
+          "alias": "noodle-pudding-brooklyn",
+          "name": "Noodle Pudding",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/o5ygMLdH6f5XVONTb3msMg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/noodle-pudding-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 553,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.69979,
+              "longitude": -73.99203
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "38 Henry St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "38 Henry St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17186253737",
+          "display_phone": "(718) 625-3737",
+          "distance": 348.12969903507525
+      },
+      {
+          "id": "q11TljTQd33XCWlVoPyRqg",
+          "alias": "the-osprey-brooklyn",
+          "name": "The Osprey",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kwlyMi4cASfqcvEl0Mmb_w/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-osprey-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 174,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.702241,
+              "longitude": -73.995539
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "60 Furman St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "60 Furman St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+13476962505",
+          "display_phone": "(347) 696-2505",
+          "distance": 436.3595970672107
+      },
+      {
+          "id": "5Fz1WlY3lxy8gJFs8s_1Dw",
+          "alias": "the-binc-brooklyn",
+          "name": "The Binc",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/RK3WuC6Nowcz2r2UeEO79Q/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-binc-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 67,
+          "categories": [
+              {
+                  "alias": "cocktailbars",
+                  "title": "Cocktail Bars"
+              },
+              {
+                  "alias": "tapasmallplates",
+                  "title": "Tapas/Small Plates"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.6992682,
+              "longitude": -73.9923109
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "60 Henry St",
+              "address2": null,
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "60 Henry St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17186241444",
+          "display_phone": "(718) 624-1444",
+          "distance": 418.2481167850162
+      },
+      {
+          "id": "toxwdOCz37bX5dJ_O1h2Ew",
+          "alias": "sugarcane-raw-bar-grill-brooklyn-7",
+          "name": "Sugarcane Raw Bar Grill",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/q5vcZ80Cp_sTN_S8O_KE_g/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sugarcane-raw-bar-grill-brooklyn-7?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 526,
+          "categories": [
+              {
+                  "alias": "sushi",
+                  "title": "Sushi Bars"
+              },
+              {
+                  "alias": "cocktailbars",
+                  "title": "Cocktail Bars"
+              },
+              {
+                  "alias": "tapasmallplates",
+                  "title": "Tapas/Small Plates"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.703799,
+              "longitude": -73.992343
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$$",
+          "location": {
+              "address1": "55 Water St",
+              "address2": null,
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "55 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17184739555",
+          "display_phone": "(718) 473-9555",
+          "distance": 204.49960408752725
+      },
+      {
+          "id": "LpVbI-E9C-CSp7WhU5h2Iw",
+          "alias": "fishmarket-restaurant-new-york",
+          "name": "Fishmarket Restaurant",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BxY50B6ntFYQa8COuI1Fog/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/fishmarket-restaurant-new-york?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 536,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "chinese",
+                  "title": "Chinese"
+              },
+              {
+                  "alias": "asianfusion",
+                  "title": "Asian Fusion"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.70717,
+              "longitude": -74.00192
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "111 South St",
+              "address2": "",
+              "address3": "",
+              "city": "New York",
+              "zip_code": "10038",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "111 South St",
+                  "New York, NY 10038"
+              ]
+          },
+          "phone": "+19173638101",
+          "display_phone": "(917) 363-8101",
+          "distance": 1090.400388493664
+      },
+      {
+          "id": "z3TwiFWdJUvY9tW8QMEseQ",
+          "alias": "taco-dumbo-brooklyn",
+          "name": "Taco Dumbo",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/25eTHDdSHG5vAVkKeWazWw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/taco-dumbo-brooklyn?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 178,
+          "categories": [
+              {
+                  "alias": "latin",
+                  "title": "Latin American"
+              },
+              {
+                  "alias": "tacos",
+                  "title": "Tacos"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.700601,
+              "longitude": -73.988467
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "56 Prospect St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "56 Prospect St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+13472020306",
+          "display_phone": "(347) 202-0306",
+          "distance": 283.1815771650934
+      },
+      {
+          "id": "-2UtjTxrt1Xzd-HPsLJ7mA",
+          "alias": "butler-brooklyn-2",
+          "name": "Butler",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/U4lXZCW47KCPbh30XMrt1w/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/butler-brooklyn-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 77,
+          "categories": [
+              {
+                  "alias": "bakeries",
+                  "title": "Bakeries"
+              },
+              {
+                  "alias": "cafes",
+                  "title": "Cafes"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.7032670673495,
+              "longitude": -73.9922419276899
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "location": {
+              "address1": "40 Water St",
+              "address2": "",
+              "address3": null,
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "40 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 173.12408964545116
+      },
+      {
+          "id": "cRsIsiuoV11zX8oLY8brhQ",
+          "alias": "dumboluv-brooklyn-3",
+          "name": "dumboLUV",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/iN17geeIHSh3tdvRrXojig/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/dumboluv-brooklyn-3?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 7,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "wine_bars",
+                  "title": "Wine Bars"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 40.7032593,
+              "longitude": -73.9866501
+          },
+          "transactions": [],
+          "location": {
+              "address1": "54 Jay St",
+              "address2": null,
+              "address3": "Olympia Wine Bar",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "54 Jay St",
+                  "Olympia Wine Bar",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 325.4331509808759
+      },
+      {
+          "id": "RrNe_0PReWHXAnjTEXBikQ",
+          "alias": "lukes-lobster-brooklyn-bridge-park-brooklyn-2",
+          "name": "Luke's Lobster Brooklyn Bridge Park",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hmq1cKYVpG8SkM0nIN2l9g/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/lukes-lobster-brooklyn-bridge-park-brooklyn-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 307,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.70359,
+              "longitude": -73.99411
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "11 Water St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "11 Water St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+19178827516",
+          "display_phone": "(917) 882-7516",
+          "distance": 322.2938662162886
+      },
+      {
+          "id": "2ggi1luerd3Mf_C82JvCYg",
+          "alias": "grimaldis-pizzeria-brooklyn-4",
+          "name": "Grimaldi's Pizzeria",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TNKqW31PTvtSw6-Lbc1mtA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/grimaldis-pizzeria-brooklyn-4?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 4559,
+          "categories": [
+              {
+                  "alias": "pizza",
+                  "title": "Pizza"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.702583,
+              "longitude": -73.9932413
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "1 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "1 Front St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188584300",
+          "display_phone": "(718) 858-4300",
+          "distance": 237.09975222254613
+      },
+      {
+          "id": "xhuDOqY9G5mPuSqBnMCaYw",
+          "alias": "henrys-end-brooklyn-4",
+          "name": "Henry's End",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/h_JcEVjz8dGX9qIZ63R1QQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/henrys-end-brooklyn-4?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 346,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "diners",
+                  "title": "Diners"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.69869,
+              "longitude": -73.99257
+          },
+          "transactions": [
+              "delivery"
+          ],
+          "price": "$$$",
+          "location": {
+              "address1": "72 Henry St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "72 Henry St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188341776",
+          "display_phone": "(718) 834-1776",
+          "distance": 477.70968574414593
+      },
+      {
+          "id": "SWK0AQ5KTDDCt8AtOhhasg",
+          "alias": "malibu-farm-new-york-2",
+          "name": "Malibu Farm",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/3jLer7KAGLsJR6EW8XtnmQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/malibu-farm-new-york-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 34,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "venues",
+                  "title": "Venues & Event Spaces"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              }
+          ],
+          "rating": 3.0,
+          "coordinates": {
+              "latitude": 40.705925,
+              "longitude": -74.001749
+          },
+          "transactions": [],
+          "location": {
+              "address1": "89 S St",
+              "address2": "",
+              "address3": null,
+              "city": "New York",
+              "zip_code": "10038",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "89 S St",
+                  "New York, NY 10038"
+              ]
+          },
+          "phone": "+12122653030",
+          "display_phone": "(212) 265-3030",
+          "distance": 1020.5236271505111
+      },
+      {
+          "id": "xeC9vn3dxVVzAMR_aFwfXg",
+          "alias": "il-brigante-new-york",
+          "name": "IL Brigante",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Qk5GDAERuUt9cd25PZhQTw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/il-brigante-new-york?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 376,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.707492,
+              "longitude": -74.002571
+          },
+          "transactions": [
+              "restaurant_reservation",
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "214 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "New York",
+              "zip_code": "10038",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "214 Front St",
+                  "New York, NY 10038"
+              ]
+          },
+          "phone": "+12122850222",
+          "display_phone": "(212) 285-0222",
+          "distance": 1158.6519693378227
+      },
+      {
+          "id": "be7zagjfrCYN9EQ5ijld5w",
+          "alias": "pollo-d-oro-downtown-brooklyn-2",
+          "name": "Pollo D' Oro",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/poX0gnWyNQsoLVw2ZC1kOg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/pollo-d-oro-downtown-brooklyn-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 240,
+          "categories": [
+              {
+                  "alias": "peruvian",
+                  "title": "Peruvian"
+              },
+              {
+                  "alias": "latin",
+                  "title": "Latin American"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.6949059702115,
+              "longitude": -73.9833294451642
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "306 Gold St",
+              "address2": "",
+              "address3": "",
+              "city": "Downtown Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "306 Gold St",
+                  "Downtown Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188558088",
+          "display_phone": "(718) 855-8088",
+          "distance": 1050.3240748150881
+      },
+      {
+          "id": "j-a8HUcsBJXHV2IfF786jw",
+          "alias": "kogane-ramen-brooklyn-heights",
+          "name": "Kogane Ramen",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nCavIzqgP6sGG5Sitq_MCg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/kogane-ramen-brooklyn-heights?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 318,
+          "categories": [
+              {
+                  "alias": "ramen",
+                  "title": "Ramen"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.698608,
+              "longitude": -73.992675
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "76 Henry St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn Heights",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "76 Henry St",
+                  "Brooklyn Heights, NY 11201"
+              ]
+          },
+          "phone": "+17188752828",
+          "display_phone": "(718) 875-2828",
+          "distance": 490.13755155940873
+      },
+      {
+          "id": "Fuk7jDI2XAcvHxqau5rKWA",
+          "alias": "acqua-restaurant-nyc-new-york",
+          "name": "Acqua Restaurant NYC",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lAKKxeZrcPVODADlao1ajQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/acqua-restaurant-nyc-new-york?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 360,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              },
+              {
+                  "alias": "wine_bars",
+                  "title": "Wine Bars"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.7082567,
+              "longitude": -74.001797
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "21 Peck Slip, Water St",
+              "address2": "",
+              "address3": "",
+              "city": "New York",
+              "zip_code": "10038",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "21 Peck Slip, Water St",
+                  "New York, NY 10038"
+              ]
+          },
+          "phone": "+12123494433",
+          "display_phone": "(212) 349-4433",
+          "distance": 1142.032826259824
+      },
+      {
+          "id": "f7g3GhoQs9nQVTJEL2p48Q",
+          "alias": "gran-electrica-brooklyn-3",
+          "name": "Gran Electrica",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ABvdSNs8cl_g9FzIlaAvOg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/gran-electrica-brooklyn-3?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 465,
+          "categories": [
+              {
+                  "alias": "mexican",
+                  "title": "Mexican"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "cocktailbars",
+                  "title": "Cocktail Bars"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 40.7027,
+              "longitude": -73.99314
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "5 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "Brooklyn",
+              "zip_code": "11201",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "5 Front St",
+                  "Brooklyn, NY 11201"
+              ]
+          },
+          "phone": "+17188522700",
+          "display_phone": "(718) 852-2700",
+          "distance": 227.2518054495363
+      },
+      {
+          "id": "4zBGXDXg9DzK0IROwCUeFg",
+          "alias": "cowgirl-seahorse-new-york-2",
+          "name": "Cowgirl Seahorse",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/mRCV94yIU3zkKiL6FPR6Vg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/cowgirl-seahorse-new-york-2?adjust_creative=LmD_JeT_dM7DX8HWnl09MQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LmD_JeT_dM7DX8HWnl09MQ",
+          "review_count": 565,
+          "categories": [
+              {
+                  "alias": "tex-mex",
+                  "title": "Tex-Mex"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "southern",
+                  "title": "Southern"
+              }
+          ],
+          "rating": 4.0,
+          "coordinates": {
+              "latitude": 40.7081358,
+              "longitude": -74.0004532
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "259 Front St",
+              "address2": "",
+              "address3": "",
+              "city": "New York",
+              "zip_code": "10038",
+              "country": "US",
+              "state": "NY",
+              "display_address": [
+                  "259 Front St",
+                  "New York, NY 10038"
+              ]
+          },
+          "phone": "+12126087873",
+          "display_phone": "(212) 608-7873",
+          "distance": 1040.906643659201
+      }
+  ],
+  "total": 211,
+  "region": {
+      "center": {
+          "longitude": -73.99043083190918,
+          "latitude": 40.702667204548234
+      }
+  }
+}

@@ -1,0 +1,22 @@
+<%= render "shared/heading", title: "Customers" %>
+
+<%= button_to "Create Customer", new_customer_path, method: :get, class: "button" %>
+
+<ul class="yelp-list">
+  <% @customers.each do |customer| %>
+    <li class="yelp-list__item">
+      <div class="yelp-list__image">
+        <%= image_tag customer.avatar %>
+      </div>
+      <div class="yelp-list__info">
+        <%= link_to customer.name, customer, class: "yelp-list__name" %>
+        <div class="yelp-list__rating">
+          Rating: <%= customer.average_rating %>
+        </div>
+        <div class="yelp-list__address">
+          <%= customer.latest_review %>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

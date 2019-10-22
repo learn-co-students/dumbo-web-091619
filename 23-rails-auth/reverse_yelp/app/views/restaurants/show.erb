@@ -1,0 +1,26 @@
+<%= render "shared/heading", title: @restaurant.name %>
+
+<div class="yelp-info">
+  <div class="yelp-info__image">
+    <%= image_tag @restaurant.image_url %>
+  </div>
+  <div class="yelp-info__main">
+    <p>
+      <%= simple_format @restaurant.address %>
+    </p>
+    <%= "⭐️" * @restaurant.rating.to_i %>
+    <div class="yelp-info__actions">
+      <%= link_to "Edit", edit_restaurant_path(@restaurant) %>
+      <%= link_to "Delete", @restaurant, method: :delete %>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<ul class="yelp-info__list">
+  <h3>Customers</h3>
+  <% @restaurant.customers.each do |customer| %>
+    <li><%= link_to customer.name, customer %></li>
+  <% end %>
+</ul>
