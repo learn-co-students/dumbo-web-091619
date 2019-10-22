@@ -1,7 +1,5 @@
 <%= render "shared/heading", title: "Restaurants" %>
 
-<%= button_to "Create Restaurant", new_restaurant_path, method: :get, class: "button" %>
-
 <ul class="yelp-list">
   <% @restaurants.each do |restaurant| %>
     <li class="yelp-list__item">

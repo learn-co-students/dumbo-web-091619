@@ -25,6 +25,15 @@ restaurant_hash["businesses"].each do |restaurant|
   )
 end
 
+# create our restaurant to use for auth examples
+Restaurant.create(
+  name: "Flatiron Diner", 
+  address: "123 Fake St", 
+  rating: 1, 
+  username: "flatiron", 
+  password: "password123"
+)
+
 # create customers
 puts "Seeding customers..."
 30.times do
