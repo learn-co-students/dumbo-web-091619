@@ -1,4 +1,5 @@
 // *** Read a DOM Element *** //
+
 // let emojisUL = document.getElementById('blobs')
 let emojisUL = document.querySelector("#blobs")
 
@@ -25,6 +26,7 @@ emojisUL.prepend(blankLi)
 
 
 // *** Update HTML Element *** //
+
 let headingH1 = document.querySelector("h1")
 headingH1.innerText = "Here is a nice list"
 headingH1.id = "first-heading"
@@ -33,6 +35,7 @@ headingH1.style.backgroundColor = "red"
 
 
 // *** Delete HTML element *** //
+
 document.querySelector(".bad").remove()
 
 allBadEmojisLIs.forEach(function(li){
