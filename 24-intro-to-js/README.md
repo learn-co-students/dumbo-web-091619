@@ -6,12 +6,19 @@
   * Week 1 - Becoming a front-end developer
   * Week 2 - Becoming a better front-end developer & understanding JS fundamentals
   * Week 3 - Project week & shiny new JS
-  
+
   * Three essential pillars of front-end web programming
+    - HTML: Hyper Text Markup Language - Structure as well as content on the page (container)
+    - CSS: Cascading Style Sheets - Aesthetic purposes
+    - JS: JavaScript - Interactivity with websites
+
     * Three essential pillars of JS
       1. When X event happens
+        (Event Listeners)
       2. I want to do Y fetch
+        (Getting/sending of information to the API/database)
       3. And then slap Z on (off) the DOM
+        (Changing how our website looks like)
 
 # Cool sites
 

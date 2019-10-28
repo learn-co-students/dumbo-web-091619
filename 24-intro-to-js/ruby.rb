@@ -10,7 +10,7 @@ def is_it_even(arr_argument)
   end
 end
 
-arr.each do |num|
+arr.each_with_index do |num, idx|
   puts "The number is #{num}."
 end
 
