@@ -14,3 +14,31 @@
 When X happens,
 We make Y fetch
 And manipulate the DOM Z way
+
+
+Asynchronous
+JavaScript
+And
+XML HTTP Request
+Extensible Markup Language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
