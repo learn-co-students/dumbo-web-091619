@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   })
 
+
   button.addEventListener('click', (evt) => {
     fetch("http://localhost:3000/foxes/random")
       .then(res => res.json())
@@ -57,8 +58,5 @@ document.addEventListener("DOMContentLoaded", function(){
     newFoxLi.append(newFoxImg)
     foxesUL.append(newFoxLi)
   }
-
-
-
 
 })
