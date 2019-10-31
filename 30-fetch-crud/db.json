@@ -7,13 +7,23 @@
     },
     {
       "title": "Trust Ali",
-      "done": true,
+      "done": false,
       "id": 2
     },
     {
       "title": "Make fetch Happen",
       "done": false,
       "id": 3
+    },
+    {
+      "title": "Learn to trust Ali",
+      "done": false,
+      "id": 4
+    },
+    {
+      "title": "Learn to trust",
+      "done": false,
+      "id": 5
     }
   ],
   "snacks": [
@@ -36,6 +46,11 @@
       "yumminess": 15,
       "name": "lunchables",
       "id": 4
+    },
+    {
+      "name": "Oreos",
+      "yumminess": 12,
+      "id": 6
     }
   ]
 }

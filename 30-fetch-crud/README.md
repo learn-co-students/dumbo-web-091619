@@ -10,7 +10,21 @@
 
 ## Read
 
+1. When X event happens
+When the page loads (DOMContentLoaded vs defer)
+2. Make Y fetch happen
+GET '/to_do_items'
+3. Slap Z on the DOM!
+Display the objects on the HTML (forEach)
+
 ## Create
+
+1. When X event happens
+When the form submits
+2. Make Y fetch happen
+POST '/to_do_items'
+3. Slap Z on the DOM!
+Append the response to the DOM
 
 ## Update
 
