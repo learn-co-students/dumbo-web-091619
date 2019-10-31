@@ -1,29 +1,19 @@
 {
   "to_do_items": [
     {
-      "id": 1,
-      "title": "Dress up for Halloween",
-      "done": true
+      "title": "Remember to give a break",
+      "done": true,
+      "id": 6
+    },
+    {
+      "title": "Make Fetch Happen",
+      "done": true,
+      "id": 7
     },
     {
       "title": "Trust Ali",
-      "done": false,
-      "id": 2
-    },
-    {
-      "title": "Make fetch Happen",
-      "done": false,
-      "id": 3
-    },
-    {
-      "title": "Learn to trust Ali",
-      "done": false,
-      "id": 4
-    },
-    {
-      "title": "Learn to trust",
-      "done": false,
-      "id": 5
+      "done": true,
+      "id": 8
     }
   ],
   "snacks": [

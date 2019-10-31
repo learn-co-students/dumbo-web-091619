@@ -28,8 +28,21 @@ Append the response to the DOM
 
 ## Update
 
+1. When X event happens
+  When the input is pressed
+2. Make Y fetch happen
+  PATCH '/to_do_items/:id'
+3. Slap Z on the DOM!
+  Check it/make it done
+
 ## Delete
 
+1. When X event happens
+  Press the x
+2. Make Y fetch happen
+  DELETE '/to_do_items/:id'
+3. Slap Z on the DOM!
+  Remove it from the DOM
 
 
 
