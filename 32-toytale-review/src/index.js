@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 // *REMEMBER*
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Three Pillars of JS
 // When X event happens (Event Listeners)
 // I want to do Y fetch (Getting/sending of information to the API/database)
@@ -33,12 +34,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 // Then you'll have code at some point.
 // It's not magic! It's a process. 
 // When in doubt DEBUG! (With debugger)
-
-
-
-
-
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Get toys
 function getToys(){
@@ -127,13 +123,6 @@ function like(toy){
     toy.target.previousElementSibling.innerText = `${thingy.likes} likes`
   })
 }
-
-// event listener
-
-
-
-
-
 
 getToys().then( toys => {
   toys.forEach(renderToys)
