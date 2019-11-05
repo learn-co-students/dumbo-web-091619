@@ -115,9 +115,9 @@ fetch("http://localhost:3000/shoes")
   </form>`
 
 
-  // let reviewForm = formContainerDiv.querySelector("form")
+  let reviewForm = formContainerDiv.querySelector("form")
 
-  document.addEventListener("submit", (event) => {
+  reviewForm.addEventListener("submit", (event) => {
     event.preventDefault()
     let newReview = event.target["review-content"].value
 
@@ -144,84 +144,8 @@ fetch("http://localhost:3000/shoes")
       // shoe.reviews.push(reviewObj)
     })
 
-
-
-
-
-
   })
 
   // DISPLAY THE FIRST SHOE OVER HERE END
 
 })
-
-
-
-
-
-
-
-
-function renderOneShoe(shoe){
-
-    shoeImg.src = shoe.image
-    shoeNameH4.innerText = shoe.name
-    shoeDescriptionP.innerText = shoe.description
-    shoePriceSmall.innerText = shoe.price
-    reviewsUl.innerHTML = ""
-
-    shoe.reviews.forEach((review) => {
-      let reviewLi = document.createElement("li")
-      reviewLi.className = "list-group-item"
-      reviewLi.innerText = review.content
-
-      reviewsUl.append(reviewLi)
-    })
-
-    formContainerDiv.innerHTML = `<form id="new-review">
-      <div class="form-group">
-        <textarea class="form-control" id="review-content" rows="3"></textarea>
-        <input type="submit" class="btn btn-primary"></input>
-      </div>
-    </form>`
-
-
-    // let reviewForm = formContainerDiv.querySelector("form")
-
-    document.addEventListener("submit", (event) => {
-      event.preventDefault()
-      let newReview = event.target["review-content"].value
-
-      fetch(`http://localhost:3000/shoes/${shoe.id}/reviews`, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(
-          {
-            content: newReview
-          }
-        )
-      })
-      .then(res => res.json())
-      .then((reviewObj) => {
-
-        let reviewLi = document.createElement("li")
-        reviewLi.className = "list-group-item"
-        reviewLi.innerText = reviewObj.content
-
-        reviewsUl.append(reviewLi)
-        // shoe.reviews.push(reviewObj)
-      })
-
-
-
-
-
-
-    })
-
-
-
-  }
