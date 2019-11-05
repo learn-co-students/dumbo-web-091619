@@ -45,9 +45,9 @@ fetch("http://localhost:3000/shoes")
       </form>`
 
 
-      // let reviewForm = formContainerDiv.querySelector("form")
+      let reviewForm = formContainerDiv.querySelector("form")
 
-      document.addEventListener("submit", (event) => {
+      reviewForm.addEventListener("submit", (event) => {
         event.preventDefault()
         let newReview = event.target["review-content"].value
 
