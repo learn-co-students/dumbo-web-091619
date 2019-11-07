@@ -1,0 +1,10 @@
+austin = Teacher.create(name: "Austin Powers")
+basket = Subject.create(teacher_id: austin.id, name: "Basket Weaving")
+a1 = Assignment.create(name: "How to not create baskets 101", subject_id: basket.id)
+a2 = Assignment.create(name: "Why you should not be taking this class 201", subject_id: basket.id)
+
+alex = Teacher.create(name: "Farmer")
+programming = Subject.create(teacher_id: alex.id, name: "Programming")
+phys_ed = Subject.create(name: "Phys Ed", teacher_id: alex.id)
+Assignment.create(name: "How to suck at programming 501", subject_id: programming.id)
+Assignment.create(name: "Run a mile", subject_id: phys_ed.id)

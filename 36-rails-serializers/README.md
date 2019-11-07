@@ -14,6 +14,9 @@
 
 # Starting off Rails project
 
+Teacher -< Subject -< Assignment
+
+
 When we build out a Rails API, we want to be sure to run the configuration of:
 
 ```bash
