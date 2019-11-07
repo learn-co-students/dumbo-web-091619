@@ -21,10 +21,11 @@ toyCollectionDiv.addEventListener("click", (event) => {
     let pTag = event.target.parentElement.querySelector("p")
     let likes = parseInt(pTag.innerText.split(" ")[0])
     likes++
-    debugger;
     fetch(`http://localhost:3000/toys/${id}`, {
       method: 'PATCH', // or 'PUT'
-      body: JSON.stringify({likes: likes}), // data can be `string` or {object}!
+      body: JSON.stringify({
+        likes: likes
+      }), // data can be `string` or {object}!
       headers:{
         'Content-Type': 'application/json',
         "Accept": "application/json"
@@ -90,7 +91,24 @@ toyForm.addEventListener("submit", (event) => {
   })
   .then(res => res.json())
   .then(toyObject => {
-    toyCollectionDiv.innerHTML += toyCard(toyObject)
+    if (!toyObject.errors) {
+      toyCollectionDiv.innerHTML += toyCard(toyObject)
+    } else {
+      alert(toyObject.errors[0])
+    }
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
