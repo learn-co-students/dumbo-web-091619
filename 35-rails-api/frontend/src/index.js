@@ -21,7 +21,7 @@ toyCollectionDiv.addEventListener("click", (event) => {
     let pTag = event.target.parentElement.querySelector("p")
     let likes = parseInt(pTag.innerText.split(" ")[0])
     likes++
-
+    debugger;
     fetch(`http://localhost:3000/toys/${id}`, {
       method: 'PATCH', // or 'PUT'
       body: JSON.stringify({likes: likes}), // data can be `string` or {object}!
@@ -32,6 +32,7 @@ toyCollectionDiv.addEventListener("click", (event) => {
     })
     .then(r => r.json())
     .then((newToy) => {
+      console.log(newToy);
       pTag.innerText = `${newToy.likes} Likes`
     })
   }
@@ -52,8 +53,8 @@ const toyCard = (toy) => {
     <h2>${toy.name}</h2>
     <img src=${toy.image} class="toy-avatar" />
     <p>${toy.likes} Likes</p>
-    <button data-id=${toy.id} class="like-btn">Like <3</button>
-    <button data-id=${toy.id} class="delete-btn">Delete</button>
+    <button data-id="${toy.id}" class="like-btn">Like <3</button>
+    <button data-id="${toy.id}" class="delete-btn">Delete</button>
   </div>`
 }
 
