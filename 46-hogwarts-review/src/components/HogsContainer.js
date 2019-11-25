@@ -26,24 +26,20 @@ class HogsContainer extends React.Component {
   }
 
   sortHogs(hogs) {
-    if (this.state.sortCriterion === "none")
-      return hogs
-    else {
-      return [ ...hogs ].sort((a,b) => {
-        return a[this.state.sortCriterion] > b[this.state.sortCriterion] ? 1 : -1
-      })
-    }
+    return [ ...hogs ].sort((a,b) => {
+      return a[this.state.sortCriterion] > b[this.state.sortCriterion] ? 1 : -1
+    })
   }
 
   render(){
-    const hogs = this.state.greasedOnly ? this.filterHogs(this.props.hogs) : this.props.hogs
-    const possiblySortedHogs = this.sortHogs(hogs)
+    const filteredHogs = this.state.greasedOnly ? this.filterHogs(this.props.hogs) : this.props.hogs
+    const sortedFilteredHogs = this.state.sortCriterion === "none" ? this.sortHogs(filteredHogs) : filteredHogs
     return (<section>
         <Filters 
           toggleGreased={ this.toggleGreasedFilter } 
           greasedOnly={ this.state.greasedOnly }
           sortChange={ this.sortChange } />
-        <HogsList hogs={ possiblySortedHogs }/>
+        <HogsList hogs={ sortedFilteredHogs }/>
       </section>)
   }
 }
