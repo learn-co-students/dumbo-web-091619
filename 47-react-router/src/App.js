@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import NotFound from './NotFound'
 import Home from './Home'
-import { SpiceGirl, Scary, Baby, Ginger, Posh, Sporty } from './spice-girls';
+import { SpiceGirl /*, Scary, Baby, Ginger, Posh, Sporty*/  } from './spice-girls';
+import { Route, Switch, Link, NavLink } from 'react-router-dom'
 
 
 export default class App extends React.Component {
@@ -17,18 +18,52 @@ export default class App extends React.Component {
           <aside className="sidebar">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <NavLink exact  to="/">Home</NavLink>
               </li>
+
+              {
+                this.state.spiceGirls.map(spice => {
+                  return <li>
+                    <NavLink
+                             to={ "/spice/" + spice.slug }>
+                    { spice.adjective }
+                    </NavLink>
+                  </li>
+                })
+              }
+              
             </ul>
           </aside>
         </header>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/P8WCVZ2kHI8?start=24&autoplay=true" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <Switch>
+          {
+          // <Route path="/geri" component={ Ginger } />
+          // <Route path="/mel-b" component={ Scary } />
+          // <Route path="/mel-c" component={ Sporty } />
+          // <Route path="/victoria" component={ Posh } />
+          }
+          <Route path="/spice/:slug" render={ this.renderSpiceGirl } />
+          <Route exact path="/" component={ Home } />
+          <Route component={ NotFound } />
+        </Switch>
+
+
+        { 
+          //<iframe width="560" height="315" src="https://www.youtube.com/embed/P8WCVZ2kHI8?start=24&autoplay=true" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
       </div>
     );
   }
 
-
+  renderSpiceGirl = (renderParams) => {
+    // console.log(renderParams)
+    const slug = renderParams.match.params.slug
+    const spiceGirl = this.state.spiceGirls.find(spice => spice.slug === slug)
+    if (spiceGirl)
+      return <SpiceGirl adjective={ spiceGirl.adjective } gif={ spiceGirl.gif }/>
+    else return <NotFound />
+  }
 
   state = {
     spiceGirls: [
@@ -44,12 +79,7 @@ export default class App extends React.Component {
         gif: "https://media.giphy.com/media/PSfMwrLPXUtrO/giphy.gif",
         slug: "emma",
       },
-      {
-        id: 3,
-        adjective: "Ginger",
-        gif: "https://media.giphy.com/media/ZA1X3mZigRMoo/giphy.gif",
-        slug: "geri",
-      },
+      
       {
         id: 4,
         adjective: "Posh",
