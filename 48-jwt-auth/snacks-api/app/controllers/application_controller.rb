@@ -2,29 +2,37 @@ class ApplicationController < ActionController::API
 
   private
 
-  def token
-    payload = {}
+  def token(user_id)
+    payload = { user_id: user_id }
     JWT.encode(payload, hmac_secret, 'HS256')
   end
 
 
   def hmac_secret
-    "4W0xg9IgcV3PEsHkmPn6GCVn0Rm4dxhVl31Z7&lkh55#uusV#KEdApCR!Nn9u*HN#mSdkpj%Au%QN"
+    ENV["HMAC_SECRET"]
   end
 
   def client_has_valid_token?
+    !!current_user_id
+    # if current_user_id.nil?
+    #   false
+    # else
+    #   true
+    # end
+  end
+
+  def current_user_id
     begin
       token = request.headers["Authorization"]
       decoded_array = JWT.decode(token, hmac_secret, true, { algorithm: 'HS256' })
       payload = decoded_array.first
     rescue #JWT::VerificationError
-      return false
+      return nil
     end
-    true
+    payload["user_id"]
   end
 
-  def current_user_id
-    
-  end
+
+
 
 end

@@ -8,19 +8,28 @@ class SnackDashboard extends React.Component {
   }
 
   componentDidMount(){
-    const { loggedInUserId} = this.props
+    const { loggedInUserId, token } = this.props
 
-    fetch("http://localhost:3000/snacks")
-      .then(res => res.json())
+    fetch("http://localhost:3000/snacks", {
+      headers: {
+        "Authorization": token 
+      }
+    }).then(res => res.json())
       .then(data => this.setState({
         allSnacks: data
       }))
 
-    fetch(`http://localhost:3000/users/${ loggedInUserId }`)
-    .then(res => res.json())
-    .then(user => this.setState({
-      mySnacks: user.snacks
-    }))
+    if (loggedInUserId) {
+      fetch(`http://localhost:3000/users/${ loggedInUserId }`, {
+        headers: {
+          "Authorization": token
+        }
+      })
+      .then(res => res.json())
+      .then(user => this.setState({
+        mySnacks: user.snacks
+      }))
+    }
   }
 
   render(){
