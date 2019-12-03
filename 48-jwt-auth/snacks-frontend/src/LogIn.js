@@ -17,27 +17,12 @@ class LogIn extends React.Component {
 
   logInSubmitted = (event) => {
     event.preventDefault()
-    // make a fetch
-    fetch("http://localhost:3000/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        username: this.state.username, 
-        password: this.state.password
-      })
-    }).then(res => res.json())
-    .then(data => {
-      if (data.errors) {
-        this.setState({
-          errors: data.errors
-        })
-      } else {
-        this.props.gotToken(data.token, data.user_id)
-      }
-    })
-    // when fetch is done...get token
+    
+  }
+
+  signUpSubmitted = (event) => {
+    event.preventDefault()
+    
   }
 
   render(){
@@ -73,7 +58,7 @@ class LogIn extends React.Component {
         <section>
           <h2>Sign up</h2>
           <button onClick={ () => this.setState({ logIn: true }) }>I already signed up!!!</button>
-          <form>
+          <form onSubmit={ this.signUpSubmitted }>
             <label  htmlFor="sign_up_username">Username</label>
             <input  id="sign_up_username" 
                     type="text" 
