@@ -2,6 +2,10 @@
 
 let potato = 5 // side effect
 
+const state = { // side effect
+  num: 67
+}
+
 function notPure(num){
   return num + potato
 }

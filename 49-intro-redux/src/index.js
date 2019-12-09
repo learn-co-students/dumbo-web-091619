@@ -1,35 +1,41 @@
-import { createStore } from 'redux'
+import { createStore } from 'redux';
+import reducer from './reducer'
+import actionCreators from './actionCreators'
 
-const reducer = (oldState, action) => {
+const store = createStore(reducer)//, initialState)
 
-  switch (action.type) {
-    case "ADD_CAT":
-      return {
-        ...oldState,
-        cats: [ ...oldState.cats, action.cat]
-      }
-    case "ADOPT_ALL_CATS":
-      return {
-        ...oldState,
-        cats: []
-      }
-    default: 
-      return {
-        ...oldState
-      }
-  }
+
+const throwAwayAllCakesBecauseTheyAreMoldy = {
+  type: "THROW_AWAY_ALL_CAKES_BECAUSE_THEY_ARE_MOLDY"
 }
 
+// const addFrenchCakeAction = cakeActionCreator("Black Forest Gatêau")
+// const addMexicanCakeAction = cakeActionCreator("Tres Leches")
+// const addTurkishCakeAction = cakeActionCreator("Turkish Tiger")
 
-const adoptAllCatsAction = {
-  type: "ADOPT_ALL_CATS"
-}
+store.dispatch(actionCreators.cakeActionCreator("Black Forest Gatêau"))
+store.dispatch(throwAwayAllCakesBecauseTheyAreMoldy)
+store.dispatch(actionCreators.cakeActionCreator("Tres Leches"))
+store.dispatch(actionCreators.cakeActionCreator("Turkish Tiger"))
+store.dispatch(throwAwayAllCakesBecauseTheyAreMoldy)
 
-const initialState = { 
-  cats: [] 
-}
+console.log(store.getState())
 
-const store = createStore(reducer, initialState)
 
-store.dispatch(adoptAllCatsAction)
+
+// const addFrenchCakeAction = {
+//   type: "ADD_CAKE",
+//   cake: {
+//     name: "Black Forest Gatêau"
+//   }
+// }
+
+// const addMexicanCakeAction = {
+//   type: "ADD_CAKE",
+//   cake: {
+//     name: "Tres Leches"
+//   }
+// }
+// console.log(store)
+
 
