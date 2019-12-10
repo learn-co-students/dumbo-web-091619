@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 const initialState = {
   name: "",
@@ -25,6 +26,7 @@ class CakeForm extends React.Component {
   }
 
   render(){
+    console.log(this.props)
     return (
       <form onSubmit={ this.onSubmit }>
         <label htmlFor="name">Name</label>
@@ -37,5 +39,32 @@ class CakeForm extends React.Component {
   }
 }
 
-export default CakeForm;
+
+const mapDispatchToProps = (dispatch, mergeProps) => {
+  return { 
+    addCake: (cake) => {
+      dispatch({
+        type: "ADD_CAKE",
+        cake: cake
+      })
+    } 
+  }
+}
+
+export default connect(undefined, mapDispatchToProps)(CakeForm);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
