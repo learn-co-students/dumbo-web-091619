@@ -1,3 +1,5 @@
+import thunks from './thunks'
+
 const createCake = (cakeName) => {
   return {
     type: "ADD_CAKE", 
@@ -7,12 +9,21 @@ const createCake = (cakeName) => {
   }
 }
 
-const createGerbil = (gerbilName) => {
-  return {
-    type: "ADD_GERBIL", 
-    gerbil: {
-      name: gerbilName
-    }
+const createGerbil = (gerbil) => {
+  return (dispatch, whatever, baseApiUrl) => {
+    fetch(baseApiUrl + "gerbils", {
+      method: "POST", 
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(gerbil)
+    }).then(res => res.json())
+      .then(data => {
+        dispatch({
+          type: "ADD_GERBIL",
+          gerbil: data
+        })
+      })
   }
 }
 
@@ -32,20 +43,9 @@ const populateCakes = () => {
   }
 }
 
+
 const populateGerbils = () => {
-  return {
-    type: "POPULATE_GERBILS",
-    gerbils: [
-      {
-        "id": 1,
-        "name": "Myrtle"
-      },
-      {
-        "id": 2,
-        "name": "Conrad"
-      }
-    ]
-  }
+  return thunks.fetchGerbilsThunk
 }
 
 const actionCreators = {

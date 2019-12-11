@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import actionCreators from './actionCreators'
 
 const initialState = {
   name: "",
@@ -58,10 +59,7 @@ class GerbilForm extends React.Component {
 const mapDispatchToProps = (dispatch, mergeProps) => {
   return { 
     addGerbil: (gerbil) => {
-      dispatch({
-        type: "ADD_GERBIL",
-        gerbil: gerbil
-      })
+      dispatch(actionCreators.createGerbil(gerbil))
     } 
   }
 }
