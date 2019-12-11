@@ -1,0 +1,22 @@
+{
+  "cakes": [
+    {
+      "id": 1,
+      "name": "Black Forest Gatêau"
+    },
+    {
+      "id": 2,
+      "name": "Torta de Tres Leches"
+    }
+  ],
+  "gerbils": [
+    {
+      "id": 1,
+      "name": "Myrtle"
+    },
+    {
+      "id": 2,
+      "name": "Conrad"
+    }
+  ]
+}
